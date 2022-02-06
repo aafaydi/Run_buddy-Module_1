@@ -5,8 +5,7 @@
     display: flex;
     width: 2000px;
     height: 40px;
-    flex-wrap: wrap;
-    background-color: DodgerBlue;
+     background-color: DodgerBlue;
   }
   
   
@@ -14,15 +13,25 @@
      
   .header  > div {
     display: flex;
-    flex-direction: row; 
-    justify-content: right;  
+    justify-items: left;
+    height: 20px;  
     background-color: DodgerBlue;
-    margin: 10px;
     text-align: center;
+    font-weight: bold;
     line-height: 25px;
     font-size: 15px;
   }
 
+  .header1  > div {
+    display: flex;
+    justify-items: right;  
+    height: 20px;
+    background-color: DodgerBlue;
+    margin: 5px;
+    text-align: center;
+    line-height: 25px;
+    font-size: 15px;
+  }
 
   
  
@@ -36,7 +45,7 @@ div.relative {
 
 div.relative1 {
     position: relative;
-    margin: 10px 50px;
+    margin: 10px 100px;
     
     width: 600px;
     height: 355px;
@@ -66,3 +75,34 @@ div.absolute2 {
     display: inline-flex;
     position: relative;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.footer {
+    background: #fce138;
+    width: 1350px;
+    height: 50px ;
+    /* padding: 40px 35px; */
+  }
+
+  .footer h2 {
+    float: left;
+    display: inline;
+    color: #024e76;
+    font-size: 30px;
+    margin: 0;
+  }
+
+  .footer div {
+    float: right;
+    line-height: 1.5;
+    text-align: right;
+  }
+
+  .footer a {
+    color: #024e76;
+  }
